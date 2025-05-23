@@ -1,0 +1,13 @@
+flask
+flask-cors
+langchain
+langchain-community
+langchain-huggingface>=0.0.1
+faiss-cpu
+transformers
+torch
+sentence-transformers
+llama-cpp-python
+PyPDF2
+pdf2image
+pytesseract

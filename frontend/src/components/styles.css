@@ -1,0 +1,144 @@
+/* Global reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: #000000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Container layout */
+  .container {
+    /* max-width: 720px; */
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background: #272727;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Title */
+  h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #ffffff;
+  }
+  
+  /* Upload Section */
+  .upload-section {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    margin-bottom: 2rem;
+  }
+  
+  .upload-section input[type="file"] {
+    flex: 1;
+  }
+  
+  button {
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Buttons */
+  .upload-btn {
+    background-color: #351644;
+    color: white;
+  }
+  
+  .upload-btn:hover {
+    background-color: #1e40af;
+  }
+  
+  .ask-btn {
+    background-color: #351644;
+    color: white;
+    /* margin-top: 0.5rem; */
+  }
+  
+  .ask-btn:hover {
+    background-color: #3e1e4d;
+  }
+  
+  /* Query input */
+  .query-box {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+    
+    gap: 1rem;
+  }
+  
+  .query-box input[type="text"] {
+    padding: 0.75rem;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    width: 100%;
+    /* margin-bottom: 0.5rem; */
+    font-size: 1rem;
+  }
+  
+  /* Chat UI */
+  .chat-container {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .chat-bubble {
+    max-width: 80%;
+    padding: 1rem;
+    border-radius: 12px;
+    font-size: 1rem;
+    line-height: 1.5;
+    word-wrap: break-word;
+  }
+  
+  .user-question {
+    background-color: #392d52;
+    align-self: flex-end;
+    text-align: right;
+  }
+  
+  .bot-answer {
+    background-color: #2f2f2f;
+    align-self: flex-start;
+    text-align: left;
+  }
+  
+  /* Message box */
+  .message {
+    font-style: italic;
+    margin-top: 0.5rem;
+  }
+  .loader-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.spinner {
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #007bff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin-bottom: 10px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
